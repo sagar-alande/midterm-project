@@ -13,11 +13,11 @@ def create_app():
 
     @app.route("/bdata")
     def about():
-        return render_template('bigdata.html')
+        return render_template('github.html')
 
     @app.route("/dbms")
     def fpat():
-        return render_template('dbms.html')
+        return render_template('docker.html')
 
     @app.route("/python")
     def python():

@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    {% block head %}
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
+
+        <title>PROJECT 1 Website IS601</title>
+    {% endblock %}
+
+</head>
+<body background="https://wallpapercave.com/wp/wp6784386.jpg">
+<div class="container">
+    <div class="row">
+        <header class="p-1 mb-5">
+            <nav class="navbar navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">My First Project Site</a>
+                    <ul class="nav nav-pills">
+                        <li class="nav-item"><a href="/" class="nav-link" aria-current="page">Home</a></li>
+                        <li class="nav-item"><a href="/bdata" class="nav-link active">GitHub</a></li>
+                        <li class="nav-item"><a href="/dbms" class="nav-link">Docker</a></li>
+                        <li class="nav-item"><a href="/python" class="nav-link">Python/Flask</a></li>
+                        <li class="nav-item"><a href="/r_prog" class="nav-link">R-programming</a></li>
+                    </ul>
+                    <!--  <ul class="navbar-nav  nav-pills">
+                          <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="/">Home</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" aria-current="page" href="/about">About</a>
+                          </li>
+                      </ul>-->
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <div class=" bluish row">
+        <h1>Git Hub</h1>
+    </div>
+    <div class="row">
+        <p>
+            <strong>Introduction</strong>
+        </p>
+        <p>GitHub is a version management and collaboration tool for programming. It allows you and others to
+            collaborate on projects from any location.
+        </p>
+        <p>Here we will discuss about
+        </p>
+        <p>
+            • Repositories
+        </p>
+        <p> • Branches
+        </p>
+        <p> • Commit
+        </p>
+        <p> • Merging of requests
+        </p>
+        <p> • Tags
+        </p>
+        <p></p>
+        <p><strong>Repository</strong></p>
+        <p>
+            Typically, a repository is used to organize a single project. Repositories can hold anything your project
+            need, including folders and files, photos, videos, spreadsheets, and data sets. A README file, which
+            contains information about your project, is frequently included in repositories. The Markdown language is
+            used to write README files. This <a href="https://www.markdownguide.org/cheat-sheet/">cheat sheet </a> will
+            help you get started with Markdown syntax. When you create
+            a new repository on GitHub, you can add a README file at the same time. Other common options, such as a
+            license file, are available on GitHub.
+        </p>
+        <p></p>
+        <p> Creating Repository</p>
+        <p>1.After logging in, in the upper-right corner of any page, use the + drop-down menu, and select New
+            repository.</p>
+        <p>2.In the Repository name box, enter your desired repo name, Adding description is optional</p>
+        <p>3.Select whether your repository will be <strong>Public or Private</strong>.</p>
+        <p>4.Click Create repository.</p>
+        <p></p>
+
+        <p><strong>Branch</strong></p>
+        <p></p>
+        <p>A branch is a version of a repository that exists in two places at the same time. It is contained within the
+            repository, but it has no effect on the primary or main branch, allowing you to operate freely without
+            causing any disruption to the "live" version. You can merge your branch back into the main branch to publish
+            your modifications once you've finished making the changes you desire.</p>
+        <p>
+            Branches allow you to develop features, fix bugs, or safely experiment with new ideas in a contained area of
+            your repository.
+        </p>
+        <p>
+            You always create a branch from an existing branch. Typically, you might create a new branch from the
+            default branch of your repository. You can then work on this new branch in isolation from changes that other
+            people are making to the repository. A branch you create to build a feature is commonly referred to as a
+            feature branch or topic branch
+        </p>
+        <p> When we create any new repository in GitHub, the GitHub creates the repository with a single branch. This
+            branch is default branch for repository, and it's the branch that will be shown to anyone visiting your
+            GitHub Profile. When you try to clone the repository code, the default branch will be cloned unless you have
+            selected specific branch to code. </p>
+        <p>
+        </p>
+        <p>
+            <strong>Git Commit</strong>
+        </p>
+        <p>
+            As we work, adding commits allows us to keep track of our progress and modifications. Each commit is treated
+            as a "save point" by Git. It's a time in the project where you can go back and fix a bug or make a
+            modification.
+        </p>
+        <p>
+            We should always provide a message when we commit. It's easy for you (and others) to know what's changed and
+            when by adding clear messages to each commit.
+        </p>
+        <p>
+            <strong> Description about commit</strong>Create a new commit containing the current contents of the index
+            and the given log message describing the changes. The new commit is a direct child of HEAD, usually the tip
+            of the current branch, and the branch is updated to point to it.
+            The content to be committed can be specified in several ways:
+        </p>
+        <p> •before using the commit command, use <strong>git-add .</strong> to incrementally "add" changes to the index
+            (Note: even updated files must be "added")
+        </p>
+        <p> •before performing the commit command, by using <strong>git-rm</strong> to remove files from the working
+            tree and index
+        </p>
+        <p> •by passing files as arguments to the commit command (without the —interactive or —patch options), which
+            causes the commit to disregard changes staged in the index and instead record the current content of the
+            listed files (which Git must already be aware of)
+        </p>
+        <p> •by using the -a switch with the commit command to automatically "add" changes from all known files and to
+            automatically "rm" files in the index that have been deleted from the working tree, before actually
+            committing
+        </p>
+        <p> •before concluding the transaction, by using the —interactive or —patch switches with the commit command to
+            pick one by one which files or hunks should be included in the commit, in addition to contents in the index.
+        </p>
+        <p> The <strong>--dry-run</strong> option can be used to obtain a summary of what is included by any of the
+            above for the next commit by giving the same set of parameters
+        </p>
+        <p>If you make a commit and then find a mistake immediately after that, you can recover from it with <strong>git
+            reset</strong>.</p>
+        <p></p>
+        <p></p>
+        <p>
+            <strong>Merge</strong>
+        </p>
+        <p>
+            The "merge" command is used to integrate changes from another branch. The target of this integration (i.e.
+            the branch that receives changes) is always the currently checked out HEAD branch.
+        </p>
+        <p>
+            While Git can perform most integrations automatically, some changes will result in conflicts that have to be
+            solved by the user. The great part of Git's merging process is that it uses the familiar edit/stage/commit
+            workflow to resolve merge conflicts. When you encounter a merge conflict, running the <strong>git
+            status</strong> command shows you which files need to be resolved.When Git encounters a conflict during a
+            merge, It will edit the content of the affected files with visual indicators that mark both sides of the
+            conflicted content. These visual markers are: <<<<<<<, =======, and >>>>>>>. Its helpful to search a project
+            for these indicators during a merge to find where conflicts need to be resolved.Generally the content before
+            the ======= marker is the receiving branch and the part after is the merging branch.
+            <strong>Git merge</strong> will combine multiple sequences of commits into one unified history. In the most
+            frequent use cases, git merge is used to combine two branches.
+        </p>
+        <p>
+            <strong>Some important options of merge</strong>
+        </p>
+        <p>
+            <strong>--no-ff</strong>Creates a merge commit even when a fast-forward would be possible.
+        </p>
+        <p><strong>--squash</strong>Combines all integrated changes into a single commit, instead of preserving them as
+            individual commits.</p>
+        <p><strong>--abort</strong>When a conflict occurs, this option can be used to abort the merge and restore the
+            project's state as it was before starting the merge.
+        </p>
+        <p></p>
+        <p></p>
+        <p><strong>Tags</strong></p>
+        <p>Annotated tags can be created in GitHub Desktop. Tags are linked to commits, so you may use them to designate
+            a specific point in your repository's history, such as a release's version number.</p>
+        <p>By default, GitHub Desktop will push the tag that you create to your repository with the associated
+            commit.</p>
+        <p>Creating a tag:</p>
+        <p>1.Click <strong>History</strong>.</p>
+        <p>2.Right-click the commit and click <strong>Create Tag</strong>. provide the tag name</p>
+        <p>3.Click <strong>Create Tag</strong> .</p>
+        <p></p>
+        <p>Viewing tags</p>
+        <p>1. click on <strong>History</strong></p>
+        <p>2. Click on Commit</p>
+        <p>3. All tags connected with a commit are displayed in the metadata for that commit.</p>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+    <!--
+    <div id="main_header" class="bluish" >
+        <h1>Classwork 10th Feb-Webpage</h1>
+    </div>
+    <div id="main_contain" class="contain">
+        <div id="information" class="current">
+            <p>Student Name: {{ name }}</p>
+            <p>College: {{ school }}</p>
+            <p>Enrolled For: {{ edu }}</p>
+            <p>Specialization In: {{ Specs }}</p>
+        </div>
+        <div id="image" class="pic">
+            <img src="https://0.academia-photos.com/23631166/16350915/16737134/s200_sagar.alande.jpg" alt="Sagar Alande">
+        </div>
+    </div>
+    <div id="main_header" class="bluish" >
+        <h1>Classwork 17th Feb-Webpage</h1>
+    </div>
+    <div id="bootstrap-info" class="contain">
+
+    </div>
+    -->
+</div>
+</body>
+</html>

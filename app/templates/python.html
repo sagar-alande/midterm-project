@@ -24,7 +24,7 @@
                         <li class="nav-item"><a href="/" class="nav-link" aria-current="page">Home</a></li>
                         <li class="nav-item"><a href="/bdata" class="nav-link">Big Data</a></li>
                         <li class="nav-item"><a href="/dbms" class="nav-link">DBMS</a></li>
-                        <li class="nav-item"><a href="/python" class="nav-link active">Python</a></li>
+                        <li class="nav-item"><a href="/python" class="nav-link active">Python/Flask</a></li>
                         <li class="nav-item"><a href="/r_prog" class="nav-link">R-programming</a></li>
                     </ul>
                     <!--  <ul class="navbar-nav  nav-pills">
@@ -41,7 +41,7 @@
     </div>
 
     <div class=" bluish row">
-        <h1>Python</h1>
+        <h1>Python/Flask</h1>
     </div>
     <div class="row">
         <p>
@@ -56,72 +56,98 @@
             information, inventory, payroll, project management, and so on, is extremely effective for organizations.
         </p>
         <p></p>
-        <p><strong>What is Python used for?</strong>
+        <p></p>
+        <p><strong>What is pytest?</strong>
         </p>
         <p></p>
-        <p>Python is widely used for web and software development, task automation, data analysis, and data
-            visualization. Python has been used by many non-programmers, such as accountants and scientists, for a
-            variety of common tasks, such as arranging finances, due to its relative ease of learning.
+        <p>PyTest is a testing framework that allows users to write test codes using Python programming language. It
+            helps you to write simple and scalable test cases for databases, APIs, or UI. PyTest is mainly used for
+            writing tests for APIs. It helps to write tests from simple unit tests to complex functional tests.
         </p>
-        <p>In his book Python for Everyone, Charles R Severance, a University of Michigan and Coursera instructor,
-            notes, "Writing programs is a really creative and fulfilling hobby." "You can build programs for a variety
-            of purposes, including making a living, solving a challenging data analysis challenge, having fun, and
-            assisting others in solving problems."
+        <p>Pytest assertions are checks that return either True or False status. In Python Pytest, if an assertion fails
+            in a test method, then that method execution is stopped there. The remaining code in that test method is not
+            executed, and Pytest assertions will continue with the next test method.
         </p>
-        <p> • <strong> Data analysis and machine learning</strong>
-        </p>
-        <p></p>
-        <p>Python has become a data science standard, allowing data analysts and other professionals to perform complex
-            statistical computations, produce data visualizations, design machine learning algorithms, handle and
-            analyze data, and perform other data-related tasks using the language.
-        </p>
-        <p> Python can create a variety of data visualizations, including line and bar graphs, pie charts, histograms,
-            and three-dimensional plots. TensorFlow and Keras are two Python frameworks that let programmers construct
-            data analysis and machine learning systems more rapidly and efficiently.
+        <p> In the code for this Project the pytest has been performed for each webpage by asserting a value from each.
+            Intitally the pytest failed due to snake case style, the pytest checks if all the variable names are
+            starting with lowercase and the words are seperated only by the underscore. After fixing the issue the
+            pytest was Successful.
         </p>
         <p></p>
-        <p> •<strong> Web development</strong>
+        <p></p>
+        <p><strong> Python Flask</strong>
         </p>
         <p></p>
-        <p>Python is frequently used to create a website's or application's back end—the elements that the user doesn't
-            see. Sending data to and from servers, processing data and interfacing with databases, URL routing, and
-            ensuring security are all examples of Python's role in web development. Python has a number of web
-            development frameworks. Django and Flask are two popular ones.
+        <p>Flask is a backend framework that is used to build web applications. A framework is a foundation for
+            developing applications and it contains several in-built modules and libraries which makes the process
+            easier for developers. It provides a structure for developers to follow while creating a web app.
         </p>
         <p>Back end engineers, full stack engineers, Python developers, software engineers, and DevOps engineers are
             some of the web development positions that require Python.
         </p>
+        <p> it’s basically a reusable code that provides specific functionality that can be used in your programs. In
+            short, a framework is a collection of libraries and modules that help you develop faster and smarter
+            applications. Apart from Flask, there are several other software frameworks developed for various
+            functions.</p>
+        <p> Here is the <a href="https://github.com/sagar-alande/docker-nginx">Git</a> link to the project i have worked
+            on with flask. </p>
         <p></p>
-        <p> •<strong>Automation or scripting</strong>
+        <p></p>
+
+        <p><strong>Setting up Pytest on Flask</strong>
         </p>
-        <p>If you find yourself repeating a task frequently, automating it with Python can help you work more
-            efficiently. Scripting is the process of writing code that is used to create these automated procedures.
-            Automation can be used to check for flaws across numerous files, convert files, perform simple math, and
-            delete duplicates in data in the coding industry.
+        <p>With the command <strong>pip install pytest</strong> you can install Pytest. Once the installation is
+            done,<strong> import pytest</strong> helps to import modules from the pytest.
         </p>
-        <p>Relative amateurs can use Python to automate simple computer chores like renaming files, discovering and
-            downloading internet information, and sending emails or SMS at predetermined intervals.
+        <p><strong>Naming convention for files:</strong> keep your tests in a <strong>tests</strong> directory in the
+            root folder of the application. Pytest recommends that test file names begin with the format <strong>test_*.py</strong>
+            or end with format <strong>**_test.py</strong>, Using these formats enables Pytest to auto-discover the test
+            files easily and also minimizes confusion when running tests.
+        </p>
+        <p>In this project I have included the tests to make sure that I receive atleast one combination of words
+            provided in the assertion.</p>
+        <p><strong>testing with pytest</strong> To run Pytest tests, you can either use py.test or pytest in the
+            terminal. You can also run a single file by explicitly specifying the filename after the Pytest command:
+            pytest (your filename).py. When these commands are executed, Pytest automatically finds all the tests in
+            either the root directory, or in the specified single file.
+
+            When no test files have been explicitly defined, Pytest executes any tests in the root directory that follow
+            the standard naming pattern, without you needing to specify filenames or directories.
+        </p>
+        <p>Pytest marks a passed test with a green dot .; it marks a failed test with a red F. Count the number of dots
+            or Fs to figure out how many tests passed and failed, and in what execution order.
         </p>
         <p></p>
-        <p><strong>Why is Python so popular?</strong>
-        </p>
-        <p>Python is popular for a number of reasons. Here’s a deeper look at what makes it so versatile and easy to use
-            for coders.
-        </p>
-        <p> • It has a <strong>simple</strong>syntax that mimics natural language, so it’s easier to read and
-            understand. This makes it quicker to build projects, and faster to improve on them.
-        </p>
-        <p> • It’s <strong>versatile</strong>. Python can be used for many different tasks, from web development to
-            machine learning.
-        </p>
-        <p> • It’s <strong>beginner friendly</strong>, making it popular for entry-level coders
-        </p>
-        <p> • It’s <strong>open source</strong>, which means it’s free to use and distribute, even for commercial
-            purposes.
-        </p>
-        <p> • Python’s archive of <strong>modules and libraries—bundles</strong> of code that third-party users have
-            created to expand Python’s capabilities—is vast and growing.
-        </p>
+        <p></p>
+        <p><strong>Project Outline</strong></p>
+        <ul>
+            <li>docker_flask-- project root folder</li>
+            <ul>
+                <li>.github-- workflows for development and production</li>
+                <ul>
+                    <li>dev.yml-- development workflow</li>
+                    <li> prod.yml-- configuration file for production / production workflow</li>
+                </ul>
+                <ul>
+                    <li>app--application layout for python project</li>
+                    <ul>
+                        <li>Static</li>
+                        <ul>
+                            <li>css -- formatting file</li>
+                            <li> images-- this folder has all images used for this project</li>
+                            <li> js-- JavaScript executes in the client and enables dynamic content and interaction that
+                                is not possible with HTML and CSS alone. Every modern Python web application uses
+                                JavaScript on the front end.
+                            </li>
+                        </ul>
+                        <li>templates-- has all the HTML pages required for the project</li>
+                        <li>_init_.py-- project initialization script invokes the base HTML script </li>
+                    </ul>
+                    <li>tests -- has all the pytest files for each page in the project</li>
+
+                    <li>docker-compose.yml-- Orchestration file that contains the configuration to develop locally, it overrides the Dockerfile to run the flask development server instead of running the gunicorn server that is used for hosting on Heroku</li>
+                    <li>Dockerfile -- File used to create an image to run in a container that runs the program</li>
+                </ul>
     </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
