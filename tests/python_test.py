@@ -4,4 +4,4 @@
 def test_python(client):
     """This makes the index page"""
     response = client.get("/python")
-    assert b' <h1>Python</h1>' in response.data
+    assert b' <h1>Python/Flask</h1>' in response.data
