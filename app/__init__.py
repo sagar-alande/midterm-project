@@ -11,19 +11,19 @@ def create_app():
     def index():
         return render_template('index.html')
 
-    @app.route("/bdata")
+    @app.route("/github")
     def about():
-        return render_template('bigdata.html')
+        return render_template('github.html')
 
-    @app.route("/dbms")
+    @app.route("/docker")
     def fpat():
-        return render_template('dbms.html')
+        return render_template('docker.html')
 
     @app.route("/python")
     def python():
         return render_template('python.html')
 
-    @app.route("/r_prog")
+    @app.route("/cicd")
     def rprog():
-        return render_template('rprog.html')
+        return render_template('cicd.html')
     return app
