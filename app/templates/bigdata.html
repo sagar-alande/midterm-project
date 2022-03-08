@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    {% block head %}
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
+
+        <title>This is {{ name }} Website</title>
+    {% endblock %}
+
+</head>
+<body background="https://wallpapercave.com/wp/wp6784386.jpg">
+<div class="container">
+    <div class="row">
+        <header class="p-1 mb-5">
+            <nav class="navbar navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">My First Project Site</a>
+                    <ul class="nav nav-pills">
+                        <li class="nav-item"><a href="/" class="nav-link" aria-current="page">Home</a></li>
+                        <li class="nav-item"><a href="/Bdata" class="nav-link active">Big Data</a></li>
+                        <li class="nav-item"><a href="/DBMS" class="nav-link">DBMS</a></li>
+                        <li class="nav-item"><a href="/python" class="nav-link">Python</a></li>
+                        <li class="nav-item"><a href="/R-prog" class="nav-link">R-programming</a></li>
+                    </ul>
+                    <!--  <ul class="navbar-nav  nav-pills">
+                          <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="/">Home</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" aria-current="page" href="/about">About</a>
+                          </li>
+                      </ul>-->
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <div class=" bluish row">
+        <h1>Big Data</h1>
+    </div>
+    <div class="row">
+        <p>
+            <strong>What is big data?</strong>
+        </p>
+        <p>Big data is a combination of structured, semi structured and unstructured data collected by organizations
+            that
+            can be mined for information and used in <a
+                    href="https://www.techtarget.com/searchenterpriseai/definition/machine-learning-ML" target="_blank">machine
+                learning</a> projects, predictive modeling and other advanced
+            analytics applications.
+        </p>
+        <p>
+            Systems that process and store big data have become a common component of data management architectures in
+            organizations, combined with tools that support big data analytics uses. Big data is often characterized by
+            the three V's:
+        </p>
+        <p>
+            • the large <strong>volume</strong> of data in many environments;
+        </p>
+        <p> • the wide <strong>variety</strong> of data types frequently stored in big data systems; and
+        </p>
+        <p> • the <strong>velocity</strong> at which much of the data is generated, collected and processed.
+        </p>
+        <p>
+            These characteristics were first identified in 2001 by Doug Laney, then an analyst at consulting firm Meta
+            Group Inc.; Gartner further popularized them after it acquired Meta Group in 2005. More recently, several
+            other V's have been added to different descriptions of big data, including veracity, value and variability.
+
+            Although big data doesn't equate to any specific volume of data, big data deployments often involve
+            terabytes, petabytes and even exabytes of data created and collected over time.
+        </p>
+        <p>
+            <strong>Why is big data important?</strong>
+        </p>
+        <p>
+            Companies use big data in their systems to improve operations, provide better customer service, create
+            personalized marketing campaigns and take other actions that, ultimately, can increase revenue and profits.
+            Businesses that use it effectively hold a potential competitive advantage over those that don't because
+            they're able to make faster and more informed business decisions.
+        </p>
+        <p>
+            For example, big data provides valuable insights into customers that companies can use to refine their
+            marketing, advertising and promotions in order to increase customer engagement and conversion rates. Both
+            historical and real-time data can be analyzed to assess the evolving preferences of consumers or corporate
+            buyers, enabling businesses to become more responsive to customer wants and needs.
+        </p>
+        <p>
+            Big data is also used by medical researchers to identify disease signs and risk factors and by doctors to
+            help diagnose illnesses and medical conditions in patients. In addition, a combination of data from
+            electronic health records, social media sites, the web and other sources gives healthcare organizations and
+            government agencies up-to-date information on infectious disease threats or outbreaks.
+        </p>
+        <p>
+            <strong>What are examples of big data?</strong>
+        </p>
+        <p>
+            Big data comes from myriad sources -- some examples are transaction processing systems, customer databases,
+            documents, emails, medical records, internet clickstream logs, mobile apps and social networks. It also
+            includes machine-generated data, such as network and server log files and data from sensors on manufacturing
+            machines, industrial equipment and internet of things devices.
+        </p>
+        <p>
+            In addition to data from internal systems, big data environments often incorporate external data on
+            consumers, financial markets, weather and traffic conditions, geographic information, scientific research
+            and more. Images, videos and audio files are forms of big data, too, and many big data applications involve
+            streaming data that is processed and collected on a continual basis.
+        </p>
+        <p>
+            <strong>Breaking down the V's of big data</strong>
+        </p>
+        <p>
+            Volume is the most commonly cited characteristic of big data. A big data environment doesn't have to contain
+            a large amount of data, but most do because of the nature of the data being collected and stored in them.
+            Clickstreams, system logs and stream processing systems are among the sources that typically produce massive
+            volumes of data on an ongoing basis.
+        </p>
+        <p> • Big data also encompasses a wide variety of data types, including the following:
+        </p>
+        <p> • structured data, such as transactions and financial records;
+        </p>
+        <p> • unstructured data, such as text, documents and multimedia files; and
+        </p>
+        <p> • semi structured data, such as web server logs and streaming data from sensors.
+        </p>
+        <p>
+            Various data types may need to be stored and managed together in big data systems. In addition, big data
+            applications often include multiple data sets that may not be integrated upfront. For example, a big data
+            analytics project may attempt to forecast sales of a product by correlating data on past sales, returns,
+            online reviews and customer service calls.
+        </p>
+        <p>
+            Velocity refers to the speed at which data is generated and must be processed and analyzed. In many cases,
+            sets of big data are updated on a real- or near-real-time basis, instead of the daily, weekly or monthly
+            updates made in many traditional data warehouses. Managing data velocity is also important as big data
+            analysis further expands into machine learning and artificial intelligence (AI), where analytical processes
+            automatically find patterns in data and use them to generate insights.
+        </p>
+        <p>
+            <strong>How big data analytics works</strong>
+        </p>
+        <p>
+            To get valid and relevant results from big data analytics applications, data scientists and other data
+            analysts must have a detailed understanding of the available data and a sense of what they're looking for in
+            it. That makes data preparation, which includes profiling, cleansing, validation and transformation of data
+            sets, a crucial first step in the analytics process.
+        </p>
+        <p>
+            Once the data has been gathered and prepared for analysis, various data science and advanced analytics
+            disciplines can be applied to run different applications, using tools that provide big data analytics
+            features and capabilities. Those disciplines include machine learning and its deep learning offshoot,
+            predictive modeling, data mining, statistical analysis, streaming analytics, text mining and more.
+        </p>
+        <p>
+            Using customer data as an example, the different branches of analytics that can be done with sets of big
+            data include the following:
+        </p>
+        <p> • <strong>Comparative analysis.</strong> This examines customer behavior metrics and real-time customer
+            engagement in order to compare a company's products, services and branding with those of its competitors.
+        </p>
+        <p> • <strong>Social media listening.</strong> This analyzes what people are saying on social media about a
+            business or product, which can help identify potential problems and target audiences for marketing
+            campaigns.
+        </p>
+        <p> • <strong>Marketing analytics.</strong> This provides information that can be used to improve marketing
+            campaigns and promotional offers for products, services and business initiatives.
+        </p>
+        <p> • <strong>Sentiment analysis.</strong> All of the data that's gathered on customers can be analyzed to reveal
+            how they feel about a company or brand, customer satisfaction levels, potential issues and how customer
+            service could be improved.
+        </p>
+        <p> • <strong>The human side of big data management and analytics</strong></p>
+        <p>
+            Ultimately, the business value and benefits of big data initiatives depend on the workers tasked with
+            managing and analyzing the data. Some big data tools enable less technical users to run predictive analytics
+            applications or help businesses deploy a suitable infrastructure for big data projects, while minimizing the
+            need for hardware and distributed software know-how.
+        </p>
+        <p>
+            Big data can be contrasted with small data, a term that's sometimes used to describe data sets that can be
+            easily used for self-service BI and analytics. A commonly quoted axiom is, <strong>"Big data is for
+            machines; small data is for people."</strong>
+        </p>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+    <!--
+    <div id="main_header" class="bluish" >
+        <h1>Classwork 10th Feb-Webpage</h1>
+    </div>
+    <div id="main_contain" class="contain">
+        <div id="information" class="current">
+            <p>Student Name: {{ name }}</p>
+            <p>College: {{ school }}</p>
+            <p>Enrolled For: {{ edu }}</p>
+            <p>Specialization In: {{ Specs }}</p>
+        </div>
+        <div id="image" class="pic">
+            <img src="https://0.academia-photos.com/23631166/16350915/16737134/s200_sagar.alande.jpg" alt="Sagar Alande">
+        </div>
+    </div>
+    <div id="main_header" class="bluish" >
+        <h1>Classwork 17th Feb-Webpage</h1>
+    </div>
+    <div id="bootstrap-info" class="contain">
+
+    </div>
+    -->
+</div>
+</body>
+</html>

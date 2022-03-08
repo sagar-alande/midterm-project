@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    {% block head %}
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
+
+        <title>This is {{ name }} Website</title>
+    {% endblock %}
+
+</head>
+<body background="https://wallpapercave.com/wp/wp6784386.jpg">
+<div class="container">
+    <div class="row">
+        <header class="p-1 mb-5">
+            <nav class="navbar navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">My First Project Site</a>
+                    <ul class="nav nav-pills">
+                        <li class="nav-item"><a href="/" class="nav-link" aria-current="page">Home</a></li>
+                        <li class="nav-item"><a href="/Bdata" class="nav-link">Big Data</a></li>
+                        <li class="nav-item"><a href="/DBMS" class="nav-link active">DBMS</a></li>
+                        <li class="nav-item"><a href="/python" class="nav-link">Python</a></li>
+                        <li class="nav-item"><a href="/R-prog" class="nav-link">R-programming</a></li>
+                    </ul>
+                    <!--  <ul class="navbar-nav  nav-pills">
+                          <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="/">Home</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" aria-current="page" href="/about">About</a>
+                          </li>
+                      </ul>-->
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <div class=" bluish row">
+        <h1>DBMS(DATABASE MANAGEMENT SYSTEM)</h1>
+    </div>
+    <div class="row">
+        <p>
+            <strong>What is DBMS?</strong>
+        </p>
+        <p>DBMS stands for "database management system" and refers to software that monitors and maintains accurate,
+            quality data in a data structure. Specifically, a DBMS helps organizations optimize, store, retrieve and
+            manage data in a database. It serves as an interface between the database and end-user to ensure data is
+            well organized and easily accessible. A DBMS uses system commands to manipulate and automate important
+            database processes, like preparing data for storage. In this article, you'll learn what a DBMS does, the
+            main types and the benefits to using one for your business.
+        </p>
+        <p><strong>What does a DBMS do?</strong>
+        </p>
+        <p>The three primary management functions of DBMS are supporting processes that can be applied to data, for
+            instance, modification, maintaining the database's logic structure and managing the storage of information
+            inside the database. DBMS can be used to stay in data compliance with regulatory organizations, as part of a
+            disaster recovery plan (for example, facilitating the off-site storage of data) or to perform performance
+            monitoring, to name a few common enterprise uses.
+
+            A DBMS has several important components:
+        </p>
+        <p>
+            • <strong>Data</strong>: Performing functions with regards to data access is an important feature of a DBMS.
+            Without data to manage there would be no systems in place to manage it.
+        </p>
+        <p> • <strong> Application</strong>: DBMS requires an application interface to launch management and monitoring
+            features. This usually takes the form of a management console where end-users can issue queries and
+            commands.
+        </p>
+        <p> • <strong> Applicable languages</strong>: Databases require query languages to issue commands. One common
+            query language is SQL, but there are others, many of which are proprietary.
+        </p>
+        <p> •<strong> Query processing</strong>: Query processing is at the core of DBMS, because queries direct the
+            DBMS as to what to do with the data. The coding language issues a query, the DBMS processes it and responds
+            by performing the command on data.
+        </p>
+        <p> •<strong> Management resources</strong>: A run-time database manager and database manager are required for
+            functionality. The run-time database manager processes, approves and performs the query being issued, while
+            the database manager allows end-users to maintain data, without a run-time requirement.
+        </p>
+        <p> •<strong> Database</strong>: The engine that holds all the data and is foundational to a DBMS is a database.
+            A database is simply a group of digital records that can be used in various ways.
+        </p>
+        <p> •<strong> Reporting</strong>: Using reporting tools, enterprise businesses can begin to draw conclusions
+            from data.
+        </p>
+        <p>
+            <strong>Types of Database Management Systems</strong>
+        </p>
+        <p>There are four types of database management systems. These are:
+        </p>
+        <p> • Hierarchal model
+        </p>
+        <p> • Network model
+        </p>
+        <p> • Object-oriented model
+        </p>
+        <p> • Relational model
+        </p>
+        <p>
+            <strong>Benefits of DBMS</strong>
+        </p>
+        <p>There are many benefits to implementing a DBMS, these include:
+        </p>
+        <p> • <strong>Data integrity</strong> If data has integrity, it's accurate and consistent. There can be multiple
+            databases in a DBMS, so the integrity of data across the application is important. When information is
+            consistent across databases, end users can use it to their advantage. Also, quick access to data provides
+            management with the information to make real-time decisions, but only data with high integrity can be deemed
+            useful for that purpose. Data integrity is of high importance to digital businesses and DBMS help keep data
+            useful by ensuring its integrity.
+        </p>
+        <p> • <strong>Security and privacy</strong> Because data is so important, security and privacy are among the top
+            concerns for businesses. Data security refers to the process of ensuring only authorized users have access
+            to data. Database professionals ensure security by making sure users undergo an authentication process each
+            time they log on. This is an inherent part of a DBMS. Privacy can also be achieved by honoring an
+            authentication process.
+        </p>
+        <p> • <strong>Reducing redundancy</strong> Redundancy is a problem for database administrators because redundant
+            files take up space and may not contain the most updated information. By centralizing multiple databases
+            with a DBMS, management of all data takes place from one location. This reduces the likelihood of redundancy
+            and makes all data easier to manage and update.
+        </p>
+        <p> • <strong>Data sharing and access</strong> Database management systems are tools that allow several users to
+            access the same data at the same time from different locations. Data is shared between approved members as
+            well. Authorization levels can ensure that data privacy is maintained at the user level and that only
+            certain people have access to specific pieces of data.
+        </p>
+        <p> • <strong>Consistency</strong>Database management solutions allow you to use the same data across all of the
+            system's applications. This ensures a higher level of consistency across the board. There's less possibility
+            that data will look differently amongst users when there's less redundancy, resulting in a very consistent
+            database experience where changes are promptly reflected across all systems viewing the data.</p>
+        <p><strong>What is The Importance of a Database Management System?</strong></p>
+        <p>The significance of data collection, evaluation, and management has grown dramatically throughout time. In
+            the business world, the concept of data is always changing and evolving. It has not only given businesses
+            new depths, but it has also made operations more difficult. Precision data capture, monitoring, and
+            archiving, on the other hand, can aid companies in tackling these issues.
+        </p>
+        <p>The database management system not only aids in the effective storage of data, but also in the sharing of
+            data throughout the business. Programmers, system administrators, and end-users are all involved in such an
+            environment. There are five components in a database environment: data, hardware, software, people, and
+            procedures. Multiple users can easily access the data and share it with other users without having to go
+            through any additional steps. In only a few seconds, the system can assist you find the information you need
+            from a big database. As a result, managing various sorts of data, such as student records, employee
+            information, inventory, payroll, project management, and so on, is extremely effective for
+            organizations.</strong>
+        </p>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+    <!--
+    <div id="main_header" class="bluish" >
+        <h1>Classwork 10th Feb-Webpage</h1>
+    </div>
+    <div id="main_contain" class="contain">
+        <div id="information" class="current">
+            <p>Student Name: {{ name }}</p>
+            <p>College: {{ school }}</p>
+            <p>Enrolled For: {{ edu }}</p>
+            <p>Specialization In: {{ Specs }}</p>
+        </div>
+        <div id="image" class="pic">
+            <img src="https://0.academia-photos.com/23631166/16350915/16737134/s200_sagar.alande.jpg" alt="Sagar Alande">
+        </div>
+    </div>
+    <div id="main_header" class="bluish" >
+        <h1>Classwork 17th Feb-Webpage</h1>
+    </div>
+    <div id="bootstrap-info" class="contain">
+
+    </div>
+    -->
+</div>
+</body>
+</html>

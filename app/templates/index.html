@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    {% block head %}
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
+
+        <title>This is {{ name }} Website</title>
+    {% endblock %}
+
+</head>
+<body background="https://wallpapercave.com/wp/wp6784386.jpg">
+<div class="container">
+    <div class="row">
+        <header class="p-1 mb-5">
+            <nav class="navbar navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">My First Project Site</a>
+                    <ul class="nav nav-pills">
+                        <li class="nav-item"><a href="/" class="nav-link active" aria-current="page">Home</a></li>
+                        <li class="nav-item"><a href="/Bdata" class="nav-link">Big Data</a></li>
+                        <li class="nav-item"><a href="/DBMS" class="nav-link">DBMS</a></li>
+                        <li class="nav-item"><a href="/python" class="nav-link">Python</a></li>
+                        <li class="nav-item"><a href="/R-prog" class="nav-link">R-programming</a></li>
+                    </ul>
+                    <!--  <ul class="navbar-nav  nav-pills">
+                          <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="/">Home</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" aria-current="page" href="/about">About</a>
+                          </li>
+                      </ul>-->
+                </div>
+            </nav>
+        </header>
+    </div>
+    <div class="row p-1 mb-5">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="/Bdata">
+                    <img src="{{ url_for('static', filename='images/big-data.jpg') }}" class="d-block w-100 h-50"
+                         alt="...">
+                        </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="/DBMS">
+                    <img src="{{ url_for('static', filename='images/DBMS.jpg') }}" class="d-block w-100 h-50"
+                         alt="...">
+                        </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="/R-prog">
+                    <img src="{{ url_for('static', filename='images/r-program.jpg') }}" class="d-block w-100 h-50"
+                         alt="...">
+                        </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="/python">
+                    <img src="{{ url_for('static', filename='images/python.jpg') }}" class="d-block w-100 h-50"
+                         alt="...">
+                        </a>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col">
+            <header class="p-1 mb-5 bluish">
+                <a>About Me</a>
+            </header>
+            <div id="image" class="pic">
+                <img src="https://0.academia-photos.com/23631166/16350915/16737134/s200_sagar.alande.jpg"
+                     alt="Sagar Alande">
+            </div>
+            <div id="information" class="current">
+                <p>Student Name: Sagar Alande</p>
+                <p>College: NJIT</p>
+                <p>Enrolled For: Master's</p>
+                <p>Specialization In: Data Sciencee</p>
+            </div>
+        </div>
+
+        <div class="col">
+            <header class="p-1 mb-5 bluish" align="center">
+                <a><strong>Professional Summary</strong></a>
+            </header>
+            <p>
+                • Designed over 50+ high-level technical solutions based on the requirement analysis
+            </p>
+            <p>
+                • Created over 25+ PL/SQL packages, 80+procedures, and functions for smooth functioning for Daily,
+                Weekly,
+                Monthly, and Quarterly reports
+            </p>
+            <p>
+                • Developed Automated Python Jobs for ETL to minimize the manual errors and bring down the errors by 60%
+            </p>
+            <p>
+                • Directed the offshore team of 6 highly talented and skilled professionals, to ensure timely delivery
+                of
+                high-quality products.
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <header class="p-1 mb-5" align="center">
+            <a><strong>AWARDS AND ACHIEVEMENTS</strong></a>
+        </header>
+        <p>
+            • Won Ace Award is given by Accenture for excellent performance in Q4 2018
+        </p>
+        <p>
+            • Recognized with Apex Award by Accenture for consistently striving to deliver beyond business objectives in
+            Q2 & Q3 2017
+        </p>
+        <p>
+            • Won 2nd Prize in a National Level Technical Festival of Shri Guru Gobind Singhji Institute of Engineering
+            and Technology, Nanded, held March 13-15, 2015
+        </p>
+        <p>
+            • Certified Oracle Autonomous Database Cloud 2019 Specialist, Oracle – April 2020-October 2021
+        </p>
+        <p>
+            • Certified Oracle Cloud Infrastructure Foundations 2020 Associate, Oracle – April 2020-October 2021
+        </p>
+    </div>
+</div>
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+-->
+<script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+<!--
+    <div id="main_header" class="bluish" >
+        <h1>Classwork 10th Feb-Webpage</h1>
+    </div>
+    <div id="main_contain" class="contain">
+        <div id="information" class="current">
+            <p>Student Name: {{ name }}</p>
+            <p>College: {{ school }}</p>
+            <p>Enrolled For: {{ edu }}</p>
+            <p>Specialization In: {{ Specs }}</p>
+        </div>
+        <div id="image" class="pic">
+            <img src="https://0.academia-photos.com/23631166/16350915/16737134/s200_sagar.alande.jpg" alt="Sagar Alande">
+        </div>
+    </div>
+    <div id="main_header" class="bluish" >
+        <h1>Classwork 17th Feb-Webpage</h1>
+    </div>
+    <div id="bootstrap-info" class="contain">
+
+    </div>
+    -->
+</body>
+</html>
