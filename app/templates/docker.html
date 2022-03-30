@@ -26,6 +26,8 @@
                         <li class="nav-item"><a href="/docker" class="nav-link active">Docker</a></li>
                         <li class="nav-item"><a href="/python" class="nav-link">Python/Flask</a></li>
                         <li class="nav-item"><a href="/cicd" class="nav-link">CI/CD</a></li>
+                        <li class="nav-item"><a href="/solid" class="nav-link">SOLID</a></li>
+                        <li class="nav-item"><a href="/aaa" class="nav-link">AAA test</a></li>
                     </ul>
                     <!--  <ul class="navbar-nav  nav-pills">
                           <li class="nav-item">
@@ -43,89 +45,130 @@
     <div class=" bluish row">
         <h1>Docker</h1>
     </div>
-    <div class="row">
-        <p>
-            <strong>Overview</strong>
-        </p>
-        <p>Docker Engine is a containerization tool that you may use to develop and containerize your apps. Docker
-            Engine is a client-server program that includes:
-        </p>
-        <p> • A server with a long-running daemon process <strong>dockerd</strong>.</p>
-        <p> • APIs which specify interfaces that programs can use to talk to and instruct the Docker daemon.</p>
-        <p> • A <strong>command line interface</strong> (CLI) client docker.</p>
-        <p>Through scripting or direct CLI instructions, the CLI employs Docker APIs to control or communicate with the
-            Docker daemon. The underlying API and CLI are used by many other Docker apps. Docker objects such as images,
-            containers, networks, and volumes are created and managed by the daemon.
-        </p>
-        <p>Here we will discuss about
-        </p>
-        <p>
-            • Containers
-        </p>
-        <p> • images
-        </p>
-        <p> • Docker Commands
-        </p>
-        <p> • commandline project
-        </p>
-        <p></p>
-        <p></p>
-        <p><strong>Containers</strong></p>
-        <p>A container is a standard software unit that encapsulates code and all of its dependencies so that the
-            program can be moved from one computing environment to another fast and reliably. A Docker container image
-            is a small, standalone software package that contains everything needed to run a program, including code,
-            runtime, system tools, system libraries, and settings.</p>
-        <p>At runtime, container images become containers, and when Docker containers run on Docker Engine, images
-            become containers. Containerized software, which is available for both Linux and Windows-based applications,
-            will always run the same independent of the infrastructure. Containers separate software from its
-            surroundings and ensure that it performs consistently despite variances in development and staging
-            environments, for example.
-        </p>
-        <p> Docker containers that run on Docker Engine:
-        </p>
-        <p> • <strong>Standard </strong>:Docker created the industry standard for containers, so they could be portable
-            anywhere
-        </p>
-        <p> •<strong>Lightweight </strong>:Containers share the machine’s OS system kernel and therefore do not require
-            an OS per application, driving higher server efficiencies and reducing server and licensing costs
-        </p>
-        <p> •<strong> Secure</strong>:Applications are safer in containers and Docker provides the strongest default
-            isolation capabilities in the industry
-        </p>
-        <p></p>
-        <p></p>
-        <p>
-            <strong>Docker Commands</strong>
-        </p>
-        <p> • <strong>docker –version</strong>:This command is used to get the currently installed version of docker
-        </p>
-        <p> • <strong>docker pull</strong>:This command is used to pull images from the docker
-            repository(hub.docker.com)
-        </p>
-        <p> • <strong>docker run</strong>:This command is used to create a container from an image
-        </p>
-        <p> • <strong>docker ps</strong>:This command is used to list the running containers
-        </p>
-        <p> • <strong>docker ps -a</strong>:This command is used to show all the running and exited containers
-        </p>
-        <p> • <strong>docker exec</strong>:This command is used to access the running container
-        </p>
-        <p> • <strong>docker stop</strong>:This command stops a running container
-        </p>
-        <p> • <strong>docker kill</strong>:This command kills the container by immediately terminating its execution.
-            The difference between 'docker kill' and 'docker stop' is that 'docker stop' allows the container to
-            gracefully shut down, whereas 'docker kill' allows the container to be killed if it is taking too long to
-            shut down.
-        </p>
-        <p> • <strong>docker commit</strong>:This command creates a new image of an edited container on the local system
-        </p>
-        <p> • <strong>docker login</strong>:This command is used to login to the docker hub repository</p>
-        <p> • <strong>docker push</strong>:This command is used to push an image to the docker hub repository</p>
-        <p> • <strong>docker images</strong>:This command lists all the locally stored docker images</p>
-        <p> • <strong>docker rm</strong>:This command is used to delete a stopped container</p>
-        <p> • <strong>docker build</strong>:This command is used to build an image from a specified docker file</p>
-        <p></p>
-        <p></p>
+
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-10">
+                <!-- Post preview-->
+                <div class="post-preview">
+                    <h2 class="post-title"><strong>Introduction</strong></h2>
+                    <p>Docker Engine is a containerization tool that you may use to develop and containerize your apps.
+                        Docker
+                        Engine is a client-server program that includes:
+                    </p>
+                    <p> • A server with a long-running daemon process <strong>dockerd</strong>.</p>
+                    <p> • APIs which specify interfaces that programs can use to talk to and instruct the Docker
+                        daemon.</p>
+                    <p> • A <strong>command line interface</strong> (CLI) client docker.</p>
+                    <p>Through scripting or direct CLI instructions, the CLI employs Docker APIs to control or
+                        communicate with the
+                        Docker daemon. The underlying API and CLI are used by many other Docker apps. Docker objects
+                        such as images,
+                        containers, networks, and volumes are created and managed by the daemon.
+                    </p>
+                    <p>Here we will discuss about
+                    </p>
+                    <p>
+                        • Containers
+                    </p>
+                    <p> • images
+                    </p>
+                    <p> • Docker Commands
+                    </p>
+                    <p> • commandline project
+                    </p>
+                    <p></p>
+                    <p></p>
+                </div>
+                <!-- Divider-->
+                <hr class="my-3"/>
+                <!-- Post preview-->
+                <div class="post-preview">
+                    <h2 class="post-title"><strong>Containers</strong></h2>
+                    <p>A container is a standard software unit that encapsulates code and all of its dependencies so
+                        that the
+                        program can be moved from one computing environment to another fast and reliably. A Docker
+                        container image
+                        is a small, standalone software package that contains everything needed to run a program,
+                        including code,
+                        runtime, system tools, system libraries, and settings.</p>
+                    <p>At runtime, container images become containers, and when Docker containers run on Docker Engine,
+                        images
+                        become containers. Containerized software, which is available for both Linux and Windows-based
+                        applications,
+                        will always run the same independent of the infrastructure. Containers separate software from
+                        its
+                        surroundings and ensure that it performs consistently despite variances in development and
+                        staging
+                        environments, for example.
+                    </p>
+                    <p> Docker containers that run on Docker Engine:
+                    </p>
+                    <p> • <strong>Standard </strong>:Docker created the industry standard for containers, so they could
+                        be portable
+                        anywhere
+                    </p>
+                    <p> •<strong>Lightweight </strong>:Containers share the machine’s OS system kernel and therefore do
+                        not require
+                        an OS per application, driving higher server efficiencies and reducing server and licensing
+                        costs
+                    </p>
+                    <p> •<strong> Secure</strong>:Applications are safer in containers and Docker provides the strongest
+                        default
+                        isolation capabilities in the industry
+                    </p>
+                    <p></p>
+                    <p></p>
+                    <p>
+                </div>
+                <!-- Divider-->
+                <hr class="my-3"/>
+                <!-- Post preview-->
+                <div class="post-preview">
+                    <h2 class="post-title"><strong>Docker Commands</strong></h2>
+                    <p> • <strong>docker –version</strong>:This command is used to get the currently installed version
+                        of docker
+                    </p>
+                    <p> • <strong>docker pull</strong>:This command is used to pull images from the docker
+                        repository(hub.docker.com)
+                    </p>
+                    <p> • <strong>docker run</strong>:This command is used to create a container from an image
+                    </p>
+                    <p> • <strong>docker ps</strong>:This command is used to list the running containers
+                    </p>
+                    <p> • <strong>docker ps -a</strong>:This command is used to show all the running and exited
+                        containers
+                    </p>
+                    <p> • <strong>docker exec</strong>:This command is used to access the running container
+                    </p>
+                    <p> • <strong>docker stop</strong>:This command stops a running container
+                    </p>
+                    <p> • <strong>docker kill</strong>:This command kills the container by immediately terminating its
+                        execution.
+                        The difference between 'docker kill' and 'docker stop' is that 'docker stop' allows the
+                        container to
+                        gracefully shut down, whereas 'docker kill' allows the container to be killed if it is taking
+                        too long to
+                        shut down.
+                    </p>
+                    <p> • <strong>docker commit</strong>:This command creates a new image of an edited container on the
+                        local system
+                    </p>
+                    <p> • <strong>docker login</strong>:This command is used to login to the docker hub repository</p>
+                    <p> • <strong>docker push</strong>:This command is used to push an image to the docker hub
+                        repository</p>
+                    <p> • <strong>docker images</strong>:This command lists all the locally stored docker images</p>
+                    <p> • <strong>docker rm</strong>:This command is used to delete a stopped container</p>
+                    <p> • <strong>docker build</strong>:This command is used to build an image from a specified docker
+                        file</p>
+                    <p></p>
+                    <p></p>
+                </div>
+                <!-- Divider-->
+                <hr class="my-3"/>
+                <!-- Pager-->
+            </div>
+        </div>
     </div>
 
     <!-- Optional JavaScript; choose one of the two! -->

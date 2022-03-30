@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    {% block head %}
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
+
+        <title>PROJECT 1 Website IS601</title>
+    {% endblock %}
+
+</head>
+<body background="https://wallpapercave.com/wp/wp6784386.jpg">
+<div class="container">
+    <div class="row">
+        <header class="p-1 mb-5">
+            <nav class="navbar navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">My First Project Site</a>
+                    <ul class="nav nav-pills" font-size="20px">
+                        <li class="nav-item" ><a href="/" class="nav-link" aria-current="page">Home</a></li>
+                        <li class="nav-item"><a href="/github" class="nav-link">GitHub</a></li>
+                        <li class="nav-item"><a href="/docker" class="nav-link">Docker</a></li>
+                        <li class="nav-item"><a href="/python" class="nav-link">Python/Flask</a></li>
+                        <li class="nav-item"><a href="/cicd" class="nav-link">CI/CD</a></li>
+                        <li class="nav-item"><a href="/solid" class="nav-link">SOLID</a></li>
+                        <li class="nav-item"><a href="/aaa" class="nav-link active">AAA test</a></li>
+                    </ul>
+                    <!--  <ul class="navbar-nav  nav-pills">
+                          <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="/">Home</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" aria-current="page" href="/about">About</a>
+                          </li>
+                      </ul>-->
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <div class=" bluish row">
+        <h1>Arrange Act Assert Testing</h1>
+    </div>
+
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-10">
+                <!-- Post preview-->
+                <div class="post-preview">
+                    <h2 class="post-title"><strong>Introduction</strong></h2>
+                    <p>A typical way of developing unit tests for a method under test is to use the AAA (Arrange, Act,
+                        Assert) pattern. The Arrange portion of a unit test method establishes the value of the data
+                        given to the procedure under test and initializes objects.</p>
+                    <P></P>
+                </div>
+                <!-- Divider-->
+                <hr class="my-3"/>
+                <!-- Post preview-->
+                <div class="post-preview">
+                    <h2 class="post-title"><strong>Terminologies used in testing</strong></h2>
+                    <p><strong>Definition::</strong> It is the definition of the test function</p>
+                    <p><img src="{{ url_for('static', filename='images/test_def.jpg') }}"></p>
+                    <p><strong>Docstring::</strong> An optional short single line statement about the behaviour under
+                        test.</p>
+                    <p><img src="{{ url_for('static', filename='images/docstring.jpg') }}"></p>
+                    <p></p>
+                    <p></p>
+                </div>
+                <!-- Divider-->
+                <hr class="my-3"/>
+                <!-- Post preview-->
+                <div class="post-preview">
+                    <p> Arrange-Act-Assert is a great way to structure test cases. It prescribes an order of operations:
+                    </p>
+                    <p>
+                        <strong>Arrange</strong> inputs and targets. Arrange steps should set up the test case. Does the test require any
+                        objects or special settings? Does it need to prep a database? Does it need to log into a web
+                        app? Handle all of these operations at the start of the test.
+                    </p>
+                    <p><strong>Act</strong> on the target behavior. Act steps should cover the main thing to be tested. This could be
+                        calling a function or method, calling a REST API, or interacting with a web page. Keep actions
+                        focused on the target behavior.
+                    </p>
+                    <p><strong>Assert</strong> expected outcomes. Act steps should elicit some sort of response. Assert steps verify the
+                        goodness or badness of that response. Sometimes, assertions are as simple as checking numeric or
+                        string values. Other times, they may require checking multiple facets of a system. Assertions
+                        will ultimately determine if the test passes or fails.
+                    </p>
+                    <p> The below image shows how we have incorporated the AAA-testing in program</p>
+                    <p><img src="{{ url_for('static', filename='images/aaa-test.jpg') }}"></p>
+                    <p>1.With the Tuple_list we are arranging the input for testing.</p>
+                    <p>2.we are acting on target behaviour by assigning the result value to desired calculation.</p>
+                    <p>3.Finally we are asserting the result value</p>
+                    <p></p>
+                </div>
+                <!-- Divider-->
+                <hr class="my-3"/>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+    <!--
+    <div id="main_header" class="bluish" >
+        <h1>Classwork 10th Feb-Webpage</h1>
+    </div>
+    <div id="main_contain" class="contain">
+        <div id="information" class="current">
+            <p>Student Name: {{ name }}</p>
+            <p>College: {{ school }}</p>
+            <p>Enrolled For: {{ edu }}</p>
+            <p>Specialization In: {{ Specs }}</p>
+        </div>
+        <div id="image" class="pic">
+            <img src="https://0.academia-photos.com/23631166/16350915/16737134/s200_sagar.alande.jpg" alt="Sagar Alande">
+        </div>
+    </div>
+    <div id="main_header" class="bluish" >
+        <h1>Classwork 17th Feb-Webpage</h1>
+    </div>
+    <div id="bootstrap-info" class="contain">
+
+    </div>
+    -->
+</div>
+</body>
+</html>

@@ -26,6 +26,8 @@
                         <li class="nav-item"><a href="/docker" class="nav-link">Docker</a></li>
                         <li class="nav-item"><a href="/python" class="nav-link">Python/Flask</a></li>
                         <li class="nav-item"><a href="/cicd" class="nav-link active">CI/CD</a></li>
+                        <li class="nav-item"><a href="/solid" class="nav-link">SOLID</a></li>
+                        <li class="nav-item"><a href="/aaa" class="nav-link">AAA test</a></li>
                     </ul>
                     <!--  <ul class="navbar-nav  nav-pills">
                           <li class="nav-item">
@@ -43,45 +45,89 @@
     <div class=" bluish row">
         <h1>Continuous Integration and Deployment</h1>
     </div>
-    <div class="row">
-        <p>
-            <strong>Introduction</strong>
-        </p>
-        <p>Continuous integration (CI) refers to the process of automatically evaluating your code as it is updated by
-            yourself and contributors, to try and catch any potential issues your updates have caused. A CI workflow
-            typically includes automatic execution of many of the steps, such as running tests, calculating code
-            coverage, and building documentation, among others.</p>
-        <p>Continuous deployment (CD) is the process of automating the deployment of new versions of your software to
-            e.g., PyPI, from changes that have made it through CI.</p>
-        <p>CI/CD also helps others contribute to your package, because the process of updating your package is automated
-            and doesn’t depend on one person’s expert knowledge (i.e., yours) of how to make releases manually. Even if
-            your package won’t be updated very often, setting up CI/CD is still beneficial because it means you don’t
-            have to remember all the manual steps required to make a release of your package (which can be daunting and
-            deter you from wanting to update and maintain your package).</p>
-        <p></p>
-        <p></p>
-        <p><strong>GitHub Actions</strong>
-        </p>
-        <p></p>
-        <p>GitHub Actions is a service for running continuous integration and delivery (CI/CD) processes. The basic
-            concept is to build a collection of commands that GitHub Actions will execute on our behalf. We call this
-            set of commands a “workflow”. A GitHub Actions workflow is defined in a .yml file and comprises the
-            collection of “actions” we want GitHub Actions to conduct for us. In a workflow, actions are grouped as
-            "steps," which are then sorted into "jobs" (e.g., job 1: continuous integration). When a process is
-            triggered by a specific "event," it is executed on a machine provided by GitHub Actions called a "runner"
-            (like merging code into the main branch of a repository).
-        </p>
-        <p>
-        </p>
-        <p><strong>steps for Heroku CI/CD</strong></p>
-        <p>1.Create an account with Heroku, create an app for production and an app for development</p>
-        <p>2.Create a new repo in Docker hub</p>
-        <p>3.Setup Docker and Heroku Credentials In the Repository Settings under Action -> Secret
-        <ul><li>In your newly created Github repository, add new repository secrets for DOCKER_USERNAME, DOCKER_PASSWORD, HEROKU_API_KEY (Values are DOCKER_USERNAME: your docker hub username; DOCKER_PASSWORD: your docker hub password; HEROKU_API_KEY: API key from the heroku app)</li></ul></p>
-<p>Get the heroku API key from account in: -> applications -> create authorization button</p>
-        <p>5.generate prod yml files with the link to docker image, production environment and registered mail id for heroku application</p>
-        <p>6.generate dev yml file with the link to development environment and registered mail id for heroku application</p>
-        <p>7.Push code to your local repo and check for any errors and fix any errors that appear when the workflow is running. You can check the workflow in the actions</p>
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-10">
+                <!-- Post preview-->
+                <div class="post-preview">
+                    <h2 class="post-title"><strong>Introduction</strong></h2>
+                    <p>Continuous integration (CI) refers to the process of automatically evaluating your code as it is
+                        updated by
+                        yourself and contributors, to try and catch any potential issues your updates have caused. A CI
+                        workflow
+                        typically includes automatic execution of many of the steps, such as running tests, calculating
+                        code
+                        coverage, and building documentation, among others.</p>
+                    <p>Continuous deployment (CD) is the process of automating the deployment of new versions of your
+                        software to
+                        e.g., PyPI, from changes that have made it through CI.</p>
+                    <p>CI/CD also helps others contribute to your package, because the process of updating your package
+                        is automated
+                        and doesn’t depend on one person’s expert knowledge (i.e., yours) of how to make releases
+                        manually. Even if
+                        your package won’t be updated very often, setting up CI/CD is still beneficial because it means
+                        you don’t
+                        have to remember all the manual steps required to make a release of your package (which can be
+                        daunting and
+                        deter you from wanting to update and maintain your package).</p>
+                    <p></p>
+                    <p></p>
+                </div>
+                <!-- Divider-->
+                <hr class="my-4"/>
+                <!-- Post preview-->
+                <div class="post-preview">
+                    <h2 class="post-title"><strong>GitHub Actions</strong></h2>
+                    <p></p>
+                    <p>GitHub Actions is a service for running continuous integration and delivery (CI/CD) processes.
+                        The basic
+                        concept is to build a collection of commands that GitHub Actions will execute on our behalf. We
+                        call this
+                        set of commands a “workflow”. A GitHub Actions workflow is defined in a .yml file and comprises
+                        the
+                        collection of “actions” we want GitHub Actions to conduct for us. In a workflow, actions are
+                        grouped as
+                        "steps," which are then sorted into "jobs" (e.g., job 1: continuous integration). When a process
+                        is
+                        triggered by a specific "event," it is executed on a machine provided by GitHub Actions called a
+                        "runner"
+                        (like merging code into the main branch of a repository).
+                    </p>
+                    <p>
+                    </p>
+                </div>
+                <!-- Divider-->
+                <hr class="my-4"/>
+                <!-- Post preview-->
+                <div class="post-preview">
+                    <h2 class="post-title"><strong>steps for Heroku CI/CD</strong></h2>
+                    <p>1.Create an account with Heroku, create an app for production and an app for development</p>
+                    <p>2.Create a new repo in Docker hub</p>
+                    <p>3.Setup Docker and Heroku Credentials In the Repository Settings under Action -> Secret</p>
+                    <ul>
+                        <li>In your newly created Github repository, add new repository secrets for DOCKER_USERNAME,
+                            DOCKER_PASSWORD, HEROKU_API_KEY (Values are DOCKER_USERNAME: your docker hub username;
+                            DOCKER_PASSWORD:
+                            your docker hub password; HEROKU_API_KEY: API key from the heroku app)
+                        </li>
+                    </ul>
+                    <p>Get the heroku API key from account in: -> applications -> create authorization button</p>
+                    <p>5.generate prod yml files with the link to docker image, production environment and registered
+                        mail id for
+                        heroku application</p>
+                    <p>6.generate dev yml file with the link to development environment and registered mail id for
+                        heroku
+                        application</p>
+                    <p>7.Push code to your local repo and check for any errors and fix any errors that appear when the
+                        workflow is
+                        running. You can check the workflow in the actions</p>
+                </div>
+                <!-- Divider-->
+                <hr class="my-4"/>
+                <!-- Pager-->
+
+            </div>
+        </div>
     </div>
 
     <!-- Optional JavaScript; choose one of the two! -->

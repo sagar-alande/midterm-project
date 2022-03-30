@@ -6,19 +6,18 @@ class Calculation:
     """ calculation abstract base class"""
 
     # pylint: disable=too-few-public-methods
-    def __init__(self, tuple_list: tuple):
+    def __init__(self, tuple_list):
         """ constructor method"""
-        self.values = Calculation.convert_args_to_tuple_of_float(tuple_list)
+        self.values = Calculation.convert_args_to_float_tuple(tuple_list)
 
     @classmethod
-    def create(cls, tuple_list: tuple):
+    def create(cls, tuple_list):
         """ factory method"""
         return cls(tuple_list)
 
     @staticmethod
-    def convert_args_to_tuple_of_float(tuple_list):
+    def convert_args_to_float_tuple(tuple_list):
         """ standardize values to list of floats"""
-
         list_values_float = []
         for item in tuple_list:
             list_values_float.append(float(item))
@@ -36,6 +35,17 @@ class Addition(Calculation):
         return sum_of_values
 
 
+class Subtraction(Calculation):
+    """subtraction calculation object"""
+
+    def get_result(self):
+        """get the subtraction results"""
+        difference_of_values = 0.0
+        for value in self.values:
+            difference_of_values = value - difference_of_values
+        return difference_of_values
+
+
 class Multiplication(Calculation):
     """multiplication calculation object"""
 
@@ -45,14 +55,3 @@ class Multiplication(Calculation):
         for value in self.values:
             result = value * result
         return result
-
-
-class Subtraction(Calculation):
-    """subtraction calculation object"""
-
-    def get_result(self):
-        """get the subtraction results"""
-        difference_of_values = 0.0
-        for value in self.values:
-            difference_of_values = difference_of_values - value
-        return difference_of_values
