@@ -27,9 +27,9 @@
                         <li class="nav-item"><a href="/python" class="nav-link">Python/Flask</a></li>
                         <li class="nav-item"><a href="/cicd" class="nav-link">CI/CD</a></li>
                         <li class="nav-item"><a href="/solid" class="nav-link">SOLID</a></li>
-                        <li class="nav-item"><a href="/aaa" class="nav-link active">AAA test</a></li>
+                        <li class="nav-item"><a href="/aaa" class="nav-link">AAA test</a></li>
                         <li class="nav-item"><a href="/oops" class="nav-link">OOPs</a></li>
-                        <li class="nav-item"><a href="/pylin" class="nav-link">Calculator pylint results</a></li>
+                        <li class="nav-item"><a href="/pylin" class="nav-link active">Calculator pylint results</a></li>
                     </ul>
                     <!--  <ul class="navbar-nav  nav-pills">
                           <li class="nav-item">
@@ -45,7 +45,7 @@
     </div>
 
     <div class=" bluish row">
-        <h1>Arrange Act Assert Testing</h1>
+        <h1>Pylint for Calculator</h1>
     </div>
 
     <div class="container px-4 px-lg-5">
@@ -54,49 +54,23 @@
                 <!-- Post preview-->
                 <div class="post-preview">
                     <h2 class="post-title"><strong>Introduction</strong></h2>
-                    <p>A typical way of developing unit tests for a method under test is to use the AAA (Arrange, Act,
-                        Assert) pattern. The Arrange portion of a unit test method establishes the value of the data
-                        given to the procedure under test and initializes objects.</p>
+                    <p>
+Pylint is a tool that checks for errors in Python code, tries to enforce a coding standard and looks for code smells. It can also look for certain type errors, it can recommend suggestions about how particular blocks can be refactored and can offer you details about the code's complexity.</p>
                     <P></P>
                 </div>
                 <!-- Divider-->
                 <hr class="my-3"/>
                 <!-- Post preview-->
                 <div class="post-preview">
-                    <h2 class="post-title"><strong>Terminologies used in testing</strong></h2>
-                    <p><strong>Definition::</strong> It is the definition of the test function</p>
-                    <p><img src="{{ url_for('static', filename='images/test_def.jpg') }}"></p>
-                    <p><strong>Docstring::</strong> An optional short single line statement about the behaviour under
-                        test.</p>
-                    <p><img src="{{ url_for('static', filename='images/docstring.jpg') }}"></p>
-                    <p></p>
-                    <p></p>
+                    <h2 class="post-title"><strong>Test files</strong></h2>
+                    <p><figure><img src="{{ url_for('static', filename='images/testfile.jpg') }}"><figcaption>example for test files used for the project</figcaption></figure></p>
                 </div>
                 <!-- Divider-->
                 <hr class="my-3"/>
                 <!-- Post preview-->
                 <div class="post-preview">
-                    <p> Arrange-Act-Assert is a great way to structure test cases. It prescribes an order of operations:
-                    </p>
-                    <p>
-                        <strong>Arrange</strong> inputs and targets. Arrange steps should set up the test case. Does the test require any
-                        objects or special settings? Does it need to prep a database? Does it need to log into a web
-                        app? Handle all of these operations at the start of the test.
-                    </p>
-                    <p><strong>Act</strong> on the target behavior. Act steps should cover the main thing to be tested. This could be
-                        calling a function or method, calling a REST API, or interacting with a web page. Keep actions
-                        focused on the target behavior.
-                    </p>
-                    <p><strong>Assert</strong> expected outcomes. Act steps should elicit some sort of response. Assert steps verify the
-                        goodness or badness of that response. Sometimes, assertions are as simple as checking numeric or
-                        string values. Other times, they may require checking multiple facets of a system. Assertions
-                        will ultimately determine if the test passes or fails.
-                    </p>
-                    <p> The below image shows how we have incorporated the AAA-testing in program</p>
-                    <p><img src="{{ url_for('static', filename='images/aaa-test.jpg') }}"></p>
-                    <p>1.With the Tuple_list we are arranging the input for testing.</p>
-                    <p>2.we are acting on target behaviour by assigning the result value to desired calculation.</p>
-                    <p>3.Finally we are asserting the result value</p>
+                    <h2 class="post-title"><strong>Pylint results</strong></h2>
+                    <p><figure><img src="{{ url_for('static', filename='images/pylintresult.jpg') }}"><figcaption>example for pylint test for the project</figcaption></figure></p>
                     <p></p>
                 </div>
                 <!-- Divider-->
