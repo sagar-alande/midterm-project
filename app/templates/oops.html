@@ -21,7 +21,7 @@
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">My First Project Site</a>
                     <ul class="nav nav-pills" font-size="20px">
-                        <li class="nav-item" ><a href="/" class="nav-link" aria-current="page">Home</a></li>
+                        <li class="nav-item"><a href="/" class="nav-link" aria-current="page">Home</a></li>
                         <li class="nav-item"><a href="/github" class="nav-link">GitHub</a></li>
                         <li class="nav-item"><a href="/docker" class="nav-link">Docker</a></li>
                         <li class="nav-item"><a href="/python" class="nav-link">Python/Flask</a></li>
@@ -29,6 +29,7 @@
                         <li class="nav-item"><a href="/solid" class="nav-link">SOLID</a></li>
                         <li class="nav-item"><a href="/aaa" class="nav-link">AAA test</a></li>
                         <li class="nav-item"><a href="/oops" class="nav-link active">OOPs</a></li>
+                        <li class="nav-item"><a href="/pylin" class="nav-link">Calculator pylint results</a></li>
                     </ul>
                     <!--  <ul class="navbar-nav  nav-pills">
                           <li class="nav-item">
@@ -44,7 +45,7 @@
     </div>
 
     <div class=" bluish row">
-        <h1>Arrange Act Assert Testing</h1>
+        <h1>Object Oriented Programming</h1>
     </div>
 
     <div class="container px-4 px-lg-5">
@@ -53,53 +54,140 @@
                 <!-- Post preview-->
                 <div class="post-preview">
                     <h2 class="post-title"><strong>Introduction</strong></h2>
-                    <p>A typical way of developing unit tests for a method under test is to use the AAA (Arrange, Act,
-                        Assert) pattern. The Arrange portion of a unit test method establishes the value of the data
-                        given to the procedure under test and initializes objects.</p>
+                    <p><a href="https://www.analyticsvidhya.com/blog/2020/09/object-oriented-programming/#:~:text=Now%2C%20there%20are%20four%20fundamental,%2C%20Polymorphism%2C%20and%20Data%20abstraction."> Object-oriented programming (OOPs)</a> is a programming paradigm in Python that employs objects and
+                        classes. Its goal is to use programming to create real-world concepts like inheritance,
+                        polymorphisms, and encapsulation. The primary idea behind OOPs is to combine data and the
+                        functions that operate with it into a single unit such that no other parts of the code may
+                        access it.</p>
                     <P></P>
                 </div>
                 <!-- Divider-->
                 <hr class="my-3"/>
                 <!-- Post preview-->
                 <div class="post-preview">
-                    <h2 class="post-title"><strong>Terminologies used in testing</strong></h2>
-                    <p><strong>Definition::</strong> It is the definition of the test function</p>
-                    <p><img src="{{ url_for('static', filename='images/test_def.jpg') }}"></p>
-                    <p><strong>Docstring::</strong> An optional short single line statement about the behaviour under
-                        test.</p>
-                    <p><img src="{{ url_for('static', filename='images/docstring.jpg') }}"></p>
-                    <p></p>
+                    <h2 class="post-title"><strong>Main Concepts of Object-Oriented Programming (OOPs)</strong></h2>
+                    <p>Class</p>
+                    <p>Objects</p>
+                    <p>Polymorphism</p>
+                    <p>Encapsulation</p>
+                    <p>Inheritance</p>
+                    <p>There are few more terms mentioned below on the page that we will be looking.</p>
                     <p></p>
                 </div>
                 <!-- Divider-->
                 <hr class="my-3"/>
                 <!-- Post preview-->
                 <div class="post-preview">
-                    <p> Arrange-Act-Assert is a great way to structure test cases. It prescribes an order of operations:
+                    <h2 class="post-title"><strong>Class and objects</strong></h2>
+                    <p> A collection of objects is referred to as a class. The blueprints or prototypes from which the
+                        objects are produced are stored in a class. It's a logical entity with some properties and
+                        methods on it.
+                        The object is a thing that has a state and behaves in a certain way.
                     </p>
                     <p>
-                        <strong>Arrange</strong> inputs and targets. Arrange steps should set up the test case. Does the test require any
-                        objects or special settings? Does it need to prep a database? Does it need to log into a web
-                        app? Handle all of these operations at the start of the test.
-                    </p>
-                    <p><strong>Act</strong> on the target behavior. Act steps should cover the main thing to be tested. This could be
-                        calling a function or method, calling a REST API, or interacting with a web page. Keep actions
-                        focused on the target behavior.
-                    </p>
-                    <p><strong>Assert</strong> expected outcomes. Act steps should elicit some sort of response. Assert steps verify the
-                        goodness or badness of that response. Sometimes, assertions are as simple as checking numeric or
-                        string values. Other times, they may require checking multiple facets of a system. Assertions
-                        will ultimately determine if the test passes or fails.
-                    </p>
-                    <p> The below image shows how we have incorporated the AAA-testing in program</p>
-                    <p><img src="{{ url_for('static', filename='images/aaa-test.jpg') }}"></p>
-                    <p>1.With the Tuple_list we are arranging the input for testing.</p>
-                    <p>2.we are acting on target behaviour by assigning the result value to desired calculation.</p>
-                    <p>3.Finally we are asserting the result value</p>
+                    <p><img src="{{ url_for('static', filename='images/solid_s.jpg') }}"></p>
+                    <p>As we see in the picture above, Calculator is a class and the result is attribute of the class.
+                        Now we can create the objects using the methods defined in the class</p>
                     <p></p>
                 </div>
                 <!-- Divider-->
                 <hr class="my-3"/>
+                <!-- Post preview-->
+                <div class="post-preview">
+                    <h2 class="post-title"><strong>Encapsulation</strong></h2>
+                    <p> One of the core principles in object-oriented programming is encapsulation (OOP). It discusses
+                        the concept of data wrapping and the methods that operate with data as a single unit. This
+                        prevents data from being accidentally modified by restricting direct access to variables and
+                        methods. An object's variable can only be altered by an object's method to prevent unintentional
+                        changes. These variables are referred to as private variables.
+                    </p>
+                    <p>
+                        Encapsulation is exemplified by a class, which encapsulates all of the data included in member
+                        functions, variables, and so on.
+                    </p>
+                    <p>
+                    <p><img src="{{ url_for('static', filename='images/solid_s.jpg') }}"></p>
+                    <p>As we see in the picture above,Add is the which is encapsulated. The calculator class can Access
+                        the method from other class her but can not modify it.</p>
+                    <p></p>
+                </div>
+                <!-- Divider-->
+                <hr class="my-3"/>
+                <!-- Post preview-->
+                <div class="post-preview">
+                    <h2 class="post-title"><strong>Inheritance</strong></h2>
+                    <p> Inheritance is the capability of one class to derive or inherit the properties from another
+                        class. The class that derives properties is called the derived class or child class and the
+                        class from which the properties are being derived is called the base class or parent class
+                    </p>
+                    <p>The benefits of inheritance are:</p>
+                    <p>It represents real-world relationships well.</p>
+                    <p>It provides the reusability of a code. We don’t have to write the same code again and again.
+                        Also, it allows us to add more features to a class without modifying it.</p>
+                    <p>It is transitive in nature, which means that if class B inherits from another class A, then all
+                        the subclasses of B would automatically inherit from class A.</p>
+                    <p>
+                    <p><img src="{{ url_for('static', filename='images/solid_i.jpg') }}"></p>
+                    <p>Here in the above example we see that the Addition class inherits the properties of the
+                        calculation class.</p>
+                    <p></p>
+                </div>
+                <!-- Divider-->
+                <hr class="my-3"/>
+                <!-- Post preview-->
+                <div class="post-preview">
+                    <h2 class="post-title"><strong>Polymorphism</strong></h2>
+                    <p> The word polymorphism means having many forms. In simple words, we can define polymorphism as
+                        the ability of a message to be displayed in more than one form. A real-life example of
+                        polymorphism, a person at the same time can have different characteristics. Like a man at the
+                        same time is a father, a husband, an employee. So the same person posses different behavior in
+                        different situations. This is called polymorphism. Polymorphism is considered as one of the
+                        important features of Object Oriented Programming.
+                    </p>
+                    <p>In the calculator project we have Get result function which stores the values for all Addition,
+                        subtraction and the Multiplication calculations.</p>
+                    <p></p>
+                </div>
+                <!-- Divider-->
+                <hr class="my-3"/>
+                <!-- Post preview-->
+                <div class="post-preview">
+                    <h2 class="post-title"><strong>Abstraction</strong></h2>
+                    <p> Abstraction is used to hide the internal functionality of the function from the users. The users
+                        only interact with the basic implementation of the function, but inner working is hidden. User
+                        is familiar with that "what function does" but they don't know "how it does."
+                    </p>
+                    <p>
+                    <p><img src="{{ url_for('static', filename='images/solid_s.jpg') }}"></p>
+                    <p>As we see in the picture above, Calculator is a class which uses the create functionality from
+                        add method. Calculator class utilizes the functionality of the add method but is unknown about
+                        how the function works</p>
+                    <p></p>
+                </div>
+                <!-- Divider-->
+                <hr class="my-3"/>
+
+                <!-- Post preview-->
+                <div class="post-preview">
+                    <h2 class="post-title"><strong>Other terminologies</strong></h2>
+                    <p> <strong>instantiation:: </strong>When we define a class only the description or a blueprint of the object is created. There is no memory allocation until we create its object. The objector instance contains real data or information.
+Instantiation is nothing but creating a new object/instance of a class.
+                    </p><strong>constructor::</strong>The job of the class constructor is to assign the values to the data members of the class when an object of the class is created.
+                    <p>
+                    <p><figure><img src="{{ url_for('static', filename='images/construct.jpg') }}"><figcaption>example for class constructor</figcaption></figure></p>
+                    <p><strong>methods::</strong> Methods are the functions that we use to describe the behavior of the objects. </p>
+                    <p><strong>Static Method::</strong>A static method does not receive an implicit first argument.A static method can be called either on the class or on an instance. Moreover, they can be called as regular functions</p>
+                    <p><figure><img src="{{ url_for('static', filename='images/staticmeth.jpg') }}"><figcaption>example for class method and static method</figcaption></figure></p>
+                    <p><strong>Type Hint::</strong>Type hinting is a formal solution to statically indicate the type of a value within your Python code. It was specified in PEP 484 and introduced in Python 3.5.</p>
+                    <p><strong>Unit Test::</strong> Unit testing makes your code future proof since you anticipate the cases where your code could potentially fail or produce a bug. Though you cannot predict all of the cases, you still address most of them.</p>
+                    <p><figure><img src="{{ url_for('static', filename='images/unit testing.jpg') }}"><figcaption>example for unit testing</figcaption></figure></p>
+                    <p><strong>Instance method and attribute::</strong>Instance attributes are those attributes that are not shared by objects. Every object has its own copy of the instance attribute.An instance method can access and even modify the value of attributes of an instance. It has one default parameter self</p>
+                    <p><figure><img src="{{ url_for('static', filename='images/method.jpg') }}"><figcaption>example for instance Method</figcaption></figure></p>
+                    <p></p>
+                </div>
+                <!-- Divider-->
+                <hr class="my-3"/>
+
             </div>
         </div>
     </div>

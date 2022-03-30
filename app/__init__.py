@@ -40,4 +40,8 @@ def create_app():
     @app.route("/oops")
     def oops():
         return render_template('oops.html')
+
+    @app.route("/pylin")
+    def pylin():
+        return render_template('calpylint.html')
     return app
