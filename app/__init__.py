@@ -26,4 +26,18 @@ def create_app():
     @app.route("/cicd")
     def rprog():
         return render_template('cicd.html')
+
+
+    @app.route("/solid")
+    def solid():
+        return render_template('solid.html')
+
+
+    @app.route("/aaa")
+    def aaa():
+        return render_template('aaa_test.html')
+
+    @app.route("/oops")
+    def oops():
+        return render_template('oops.html')
     return app
