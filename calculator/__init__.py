@@ -7,25 +7,25 @@ class Calculator:
     result=0
 
     @staticmethod
-    def add(self, tuple_list):
+    def add(tuple_list):
         """ This is the add method"""
         # Call the static method add to return the sum and set it to the calculator result property
         calculation = Add.create(tuple_list)
-        self.result = calculation.get_result()
-        return self.result
+        return calculation.get_result()
+
 
     @staticmethod
-    def subtract(self, tuple_list):
+    def subtract(tuple_list):
         """ This is the subtract method"""
         calculation = Subtract.create(tuple_list)
         # Call the static method to return the subtraction and set it to the calculator result property
-        self.result = calculation.get_result()
-        return self.result
+
+        return calculation.get_result()
 
     @staticmethod
-    def multiply(self, tuple_list):
+    def multiply(tuple_list):
         """ This is the subtract method"""
         calculation = Multiply.create(tuple_list)
         # Call the static method to return the multiplication and set it to the calculator result property
-        self.result = calculation.get_result()
-        return self.result
+
+        return calculation.get_result()

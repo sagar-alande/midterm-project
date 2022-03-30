@@ -36,4 +36,8 @@ def create_app():
     @app.route("/aaa")
     def aaa():
         return render_template('aaa_test.html')
+
+    @app.route("/oops")
+    def oops():
+        return render_template('oops.html')
     return app
